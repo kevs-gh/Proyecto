@@ -22,36 +22,37 @@
 
 	</head>
 
-	<body>
-		<header>	
-			<div class="header__contenedor">
-				<div  class="header">
-					<a class="header__logo" title="desalvo" href="index.html"><img src="imagenes/logo.png" alt="logo"/></a>	
-				</div>
+	<body>			
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" title="desalvo" href="index.html" ><img src="imagenes/logo.png" width="200px" alt="logo"/></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<div class="header__menu"> 
-					<div class="container-fluid">
-						<ul class="header__navUl">
-							<li>
-								<a class="header__a" href="index.html">INICIO</a>
+					<div class="collapse navbar-collapse" id="navbarText">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">INICIO</a>
 							</li>
-							<li>
-								<a class="header__a" href="secciones/servicios.html">SERVICIOS</a>
+							<li class="nav-item">
+								<a class="nav-link" href="secciones/servicios.html">SERVICIOS</a>
 							</li>
-							<li>
-								<a class="header__a" href="secciones/sucursales.html">SUCURSALES</a>
+							<li class="nav-item">
+								<a class="nav-link" href="secciones/sucursales.html">SUCURSALES</a>
 							</li>
-							<li>
-								<a class="header__a" href="secciones/nosotros.html">NOSOTROS</a>
+							<li class="nav-item">
+								<a class="nav-link" href="secciones/nosotros.html">NOSOTROS</a>
 							</li>
-							<li>
-								<a class="header__a" href="secciones/contacto.html">CONTACTO</a>
+							<li class="nav-item">
+								<a class="nav-link" href="secciones/contacto.html">CONTACTO</a>
 							</li>
-						</ul>	
-					</div>	
+						</ul>
+					</div>
 				</div>
-			</div>
-		</header>	
+			</nav>
+		<header>	
 
 		<img src="imagenes/fondo.jpg" width=100% alt="fondo" title="fondo"/>
 
@@ -59,45 +60,63 @@
 			<h2 class="index_subtitulo">Calidad, servicio, cumplimiento y trayectoria nos diferencian.</h2>
 		</div>
 
-		<section class="imagenes">		
-				<div class="imagenes__container">
-					<img class="imagenes_img" src="imagenes/2Impresiones.jpg" alt="Impresiones" >
-						<div class="imagenes__overlay">
-							<div class="imagenes__text">IMPRESIONES</div>
-						</div>
+		<div class="imagenes">	
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="imagenes__container">
+						<img class="img-fluid" src="imagenes/2Impresiones.jpg" width="640px" height="640px" alt="Impresiones" />
+							<div class="imagenes__overlay">
+								<div class="imagenes__text">IMPRESIONES</div>
+							</div>
+					</div>		
 				</div>
 
-				<div class="imagenes__container">
-					<img class="imagenes_img" src="imagenes/3Ploteos.jpg" alt="Ploteos" >
-						<div class="imagenes__overlay">
-							<div class="imagenes__text">PLOTEOS</div>
-						</div>
+				<div class="col-12 col-md-6">
+					<div class="imagenes__container">
+						<img class="img-fluid" src="imagenes/3Ploteos.jpg" width="640px" height="640px" alt="Ploteos" />
+							<div class="imagenes__overlay">
+								<div class="imagenes__text">PLOTEOS</div>
+							</div>
+					</div>		
+				</div>	
+
+				<div class="col-12 col-md-6">
+					<div class="imagenes__container">
+						<img class="img-fluid" src="imagenes/4Copiado.jpg" width="640px" height="640px" alt="Copiado" />
+							<div class="imagenes__overlay">
+								<div class="imagenes__text">COPIADO</div>
+							</div>
+					</div>		
 				</div>
-				<div class="imagenes__container">
-					<img class="imagenes_img" src="imagenes/4Copiado.jpg" alt="Copiado" >
-						<div class="imagenes__overlay">
-							<div class="imagenes__text">COPIADO</div>
-						</div>
+
+				<div class="col-12 col-md-6">
+					<div class="imagenes__container">
+						<img class="img-fluid" src="imagenes/5Digitalizacion.jpg" width="640px"  height="640px" alt="Digitalizacion" />
+							<div class="imagenes__overlay">
+								<div class="imagenes__text">DIGITALIZACIONES</div>
+							</div>
+					</div>		
+				</div>	
+
+				<div class="col-12 col-md-6">
+					<div class="imagenes__container">
+						<img class="img-fluid" src="imagenes//6Terminaciones.jpg" width="640px"  height="640px" alt="Terminaciones" />
+							<div class="imagenes__overlay">
+								<div class="imagenes__text">TERMINACIONES</div>
+							</div>
+					</div>		
 				</div>
-				<div class="imagenes__container">
-					<img class="imagenes_img" src="imagenes/5Digitalizacion.jpg" alt="Digitalizaciones" >
-						<div class="imagenes__overlay">
-							<div class="imagenes__text">DIGITALIZACIONES</div>
-						</div>
-				</div>
-				<div class="imagenes__container">
-					<img class="imagenes_img" src="imagenes/6Terminaciones.jpg" alt="Terminaciones" >
-						<div class="imagenes__overlay">
-							<div class="imagenes__text">TERMINACIONES</div>
-						</div>
-				</div>
-				<div class="imagenes__container">
-					<img class="imagenes_img" src="imagenes/1libreria.jpg" alt="Librería" >
-						<div class="imagenes__overlay">
-							<div class="imagenes__text">LIBRERIA</div>
-						</div>
-				</div>
-		</section>
+
+				<div class="col-12 col-md-6">
+					<div class="imagenes__container">
+						<img class="img-fluid" src="imagenes/1libreria.jpg" width="640px" height="640px" alt="Librería" />
+							<div class="imagenes__overlay">
+								<div class="imagenes__text">LIBRERIA</div>
+							</div>
+					</div>		
+				</div>	
+			</div>	
+		</div>
 
 		<footer>	
 			<h3>Todos los derechos reservados © Desalvo 2021</h3>
