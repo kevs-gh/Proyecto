@@ -20,6 +20,9 @@ body {
 .navbar-brand{
 	padding: 0px;
 	margin: 0px;
+	transition-property: all;
+	transition-duration: 300ms;
+	
 }
 
 .navbar-collapse {
@@ -27,6 +30,35 @@ body {
     flex-grow: 0;
     align-items: center;
 }
+
+
+/*
+#logo1 {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+#logo1:hover{
+    display: none;
+}
+
+#logo2{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    filter: opacity(0);
+    transition: 0.3s;
+}
+
+#logo2:hover{
+    filter: opacity(1);
+}
+
+#navbarText {
+    justify-content: flex-end!important;
+}
+*/
 
 
 /* INDEX - SUBTITULO ------------------- */
@@ -42,13 +74,8 @@ body {
 
 /* INDEX - IMAGENES -------------------- */
 
-.imagenes {
-
-}
-
 .imagenes__container {
 	position: relative;
-
   }
   
 .imagenes__overlay {
@@ -64,8 +91,18 @@ body {
 	background-color: #1a1a1a;
  }
   
+
+
+
+
 .imagenes__container:hover .imagenes__overlay {
 	opacity: 0.7;
+	
+}
+
+.imagenes__container:hover {
+	transform: scale(1.05 ,1.05);
+	transition: 0.3s;
 }
   
 .imagenes__text {
@@ -77,8 +114,8 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-
 }
+
 .row>* {
 	display: flex;
 	flex-wrap: wrap;
@@ -87,21 +124,13 @@ body {
 
 	margin: 0px;
 	padding: 0px;
-
 }
-
-
 
 h2 {
 	margin: 20px;
 }
 
-
-
-
-
 /* SERVICIOS ----------------------------- */
-
 
 .servicios {
 	font-size: 30px;
@@ -113,38 +142,30 @@ h2 {
 
 .container {
 	margin-top: 200px;
-	
-
 }
 
 .container__listas {
 	padding: 50px;
 	color: rgb(80, 80, 80);
-
 }
 
 .container__titulos {
 	font-size: 30px;
-	
 }
 
 .container__subtitulos {
 	font-size: 20px;
-
 }
 
 .container__izquierda {
 	background-color: rgb(252, 252, 252);
-
 }
 
 .container__derecha {
 	background-color: white;
-
 }
 
 /* SUCURSALES ----------------------------- */
-
 
 .sucursales {
 	font-size: 30px;
@@ -153,7 +174,6 @@ h2 {
 	margin-bottom: 50px;;
 	letter-spacing: 10;
 	text-align: center; 
-
 }
 
 #grilla > * {
@@ -161,7 +181,6 @@ h2 {
 }
 
 #grilla {	
-	
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	width: 70%;
@@ -176,7 +195,6 @@ h2 {
 .sucursales__grilla {
 	grid-column-gap: 10px;
 	grid-row-gap: 5px;
-
 }
 
 .mapas {
@@ -184,7 +202,6 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 100px;
-
 }
 
 .mapas__titulos {
@@ -193,10 +210,7 @@ h2 {
 	text-align: center;
 }
 
-
-
 /* NOSOTROS ------------------------------ */
-
 
 .nosotros {
 	background-color: white;
@@ -205,7 +219,6 @@ h2 {
 
 	margin-top: 70px;
 	margin-bottom: 70px;
-	
 }
 
 .nosotros__titulo {
@@ -215,20 +228,16 @@ h2 {
 	margin-bottom: 150px;
 	letter-spacing: 10;
 	text-align: center; 
-
 }
 
 .nosotros__subtitulo {
 	font-size: 20px;
 	text-align: center;
-
 }
 
 .nosotros__parrafo {
 	font-size: 16px;
-
 }
-
 
 /* CONTACTO - FORMULARIO ----------------- */
 
@@ -236,13 +245,11 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
 	flex-wrap: wrap;
 	align-content: center;
 	padding: 30px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-
 }
 
 .col-sm-3 {
@@ -250,9 +257,7 @@ h2 {
 	flex-direction: column;
 	margin: 20px;
 	margin-left: 0px;
-	
 }
-
 
 .form-select {
 	justify-content: center;
@@ -266,7 +271,6 @@ h2 {
 	margin-bottom: 150px;
 	letter-spacing: 10;
 	text-align: center; 
-
 }
 
 .form__legend {
@@ -284,7 +288,6 @@ h2 {
 
 .col-sm-10 {
 	justify-content: center;
-
 }
 
 .form-check {
@@ -295,13 +298,11 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	margin: 20px;
-	
 }
 
 .form-check {
 	margin-bottom: 20px;
 }
-
 
 /* FOOTER --------------------------- */
 
@@ -322,12 +323,10 @@ h3 {
 	align-items: center;
 }
 
-
 .header__iconos {
 	display: flex;
 	align-items: center;
 	margin-right: 35px;
-
 }
 
 .logoFb {
