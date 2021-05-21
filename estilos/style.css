@@ -218,8 +218,8 @@ body {
 
 #sliding-container figure:last-of-type img:nth-child(1) {
 
-	width: 4212px;
-	height: 857px;
+	width: 220%;
+	height: auto;
 }
 
 
