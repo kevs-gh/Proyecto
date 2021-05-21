@@ -7,7 +7,8 @@ body {
 /* INDEX -  MENU --------------------- */
 
 .container-fluid {
-	margin: 12px;
+	margin-top: 10px;
+	margin-bottom: 12px;
 }
 
 .navbar {
@@ -61,18 +62,19 @@ body {
 */
 
 
-/* INDEX - SUBTITULO ------------------- */
-
-.index_subtitulo {
-	font-size: 30px;
-	margin-top: 300px;
-	margin-bottom: 300px;
-	text-align: center;
-
-}
-
 
 /* INDEX - IMAGENES -------------------- */
+
+
+.indexTitulo {
+	font-size: 30px;
+	color: rgb(70, 70, 70);
+	margin-top: 150px;
+	margin-bottom: 150px;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	text-align: center; 
+}
 
 .imagenes__container {
 	position: relative;
@@ -84,15 +86,12 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 640px;
-	width: 640px;
+	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #1a1a1a;
  }
   
-
-
 
 
 .imagenes__container:hover .imagenes__overlay {
@@ -126,19 +125,9 @@ body {
 	padding: 0px;
 }
 
-h2 {
-	margin: 20px;
-}
+
 
 /* SERVICIOS ----------------------------- */
-
-.servicios {
-	font-size: 30px;
-	color: black;
-	margin-top: 150px;
-	letter-spacing: 10;
-	text-align: center;
-}
 
 .container {
 	margin-top: 200px;
@@ -151,10 +140,12 @@ h2 {
 
 .container__titulos {
 	font-size: 30px;
+	margin: 20px;
+	color: rgb(70, 70, 70);
 }
 
 .container__subtitulos {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .container__izquierda {
@@ -166,15 +157,6 @@ h2 {
 }
 
 /* SUCURSALES ----------------------------- */
-
-.sucursales {
-	font-size: 30px;
-	color: black;
-	margin-top: 150px;
-	margin-bottom: 50px;;
-	letter-spacing: 10;
-	text-align: center; 
-}
 
 #grilla > * {
 	border: 3px solid white;
@@ -208,9 +190,38 @@ h2 {
 	font-size: 20px;
 	margin: 100px 0px;
 	text-align: center;
+	width: 90%;
 }
 
 /* NOSOTROS ------------------------------ */
+
+#sliding-container {
+	display: flex;
+	overflow: hidden;
+
+}
+
+#sliding-container figure {
+	position: relative;
+	flex: 1;
+	margin: 0;
+	overflow: hidden;
+}
+
+#sliding-container img {
+	transition: 15s ease-in-out;
+}
+
+#sliding-container figure:first-of-type:hover img {
+	transform: translateX(-50%);
+}
+
+#sliding-container figure:last-of-type img:nth-child(1) {
+
+	width: 4212px;
+	height: 857px;
+}
+
 
 .nosotros {
 	background-color: white;
@@ -219,15 +230,6 @@ h2 {
 
 	margin-top: 70px;
 	margin-bottom: 70px;
-}
-
-.nosotros__titulo {
-	font-size: 30px;
-	color: black;
-	margin-top: 50px;
-	margin-bottom: 150px;
-	letter-spacing: 10;
-	text-align: center; 
 }
 
 .nosotros__subtitulo {
@@ -264,14 +266,6 @@ h2 {
 	width: auto;
 }
 
-.form__titulo {
-	font-size: 30px;
-	color: black;
-	margin-top: 100px;
-	margin-bottom: 150px;
-	letter-spacing: 10;
-	text-align: center; 
-}
 
 .form__legend {
 	font-size: 17px;
@@ -316,7 +310,7 @@ footer {
 	padding: 20px;
 }
 
-h3 {
+footer p {
 	margin: 10px;
 	font-size: 13px;
 	display: flex;
@@ -334,4 +328,17 @@ h3 {
 }
 .logoMail {
 	margin: 10px;
+}
+
+
+/* XTRAS -------------------- */
+
+
+h1 {
+	font-size: 30px;
+	color: rgb(70, 70, 70);
+	margin-top: 150px;
+	margin-bottom: 150px;
+	letter-spacing: 22px;
+	text-align: center; 
 }
