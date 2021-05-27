@@ -4,7 +4,7 @@ body {
 }
 
 
-/* INDEX -  MENU --------------------- */
+/* INDEX -  MENU ----------------------- */
 
 .container-fluid {
 	margin-top: 10px;
@@ -63,7 +63,7 @@ body {
 
 
 
-/* INDEX - IMAGENES -------------------- */
+/* INDEX - IMAGENES ------------------- */
 
 
 .indexTitulo {
@@ -91,7 +91,6 @@ body {
 	transition: .5s ease;
 	background-color: #1a1a1a;
  }
-  
 
 
 .imagenes__container:hover .imagenes__overlay {
@@ -100,14 +99,14 @@ body {
 }
 
 .imagenes__container:hover {
-	transform: scale(1.05 ,1.05);
 	transition: 0.3s;
 }
   
 .imagenes__text {
 	color:white;
-	font-size: 20px;	
-	letter-spacing: 11;
+	font-size: 25px;	
+	font-weight: bold;
+	letter-spacing: 11px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -127,7 +126,7 @@ body {
 
 
 
-/* SERVICIOS ----------------------------- */
+/* SERVICIOS --------------------------- */
 
 .container {
 	margin-top: 200px;
@@ -156,28 +155,14 @@ body {
 	background-color: white;
 }
 
-/* SUCURSALES ----------------------------- */
+/* SUCURSALES -------------------------- */
 
-#grilla > * {
-	border: 3px solid white;
+.accordion-item {
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
 }
 
-#grilla {	
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	width: 70%;
-	margin: auto;
-	margin-top: 200px;
-	margin-bottom: 100px;
-	background-color: rgb(252, 252, 252);
-	padding: 10px;
-	color: rgb(100, 100, 100);
-}
-
-.sucursales__grilla {
-	grid-column-gap: 10px;
-	grid-row-gap: 5px;
-}
 
 .mapas {
 	display: flex;
@@ -193,12 +178,11 @@ body {
 	width: 90%;
 }
 
-/* NOSOTROS ------------------------------ */
+/* NOSOTROS ---------------------------- */
 
 #sliding-container {
 	display: flex;
 	overflow: hidden;
-
 }
 
 #sliding-container figure {
@@ -227,7 +211,6 @@ body {
 	background-color: white;
 	justify-content: center;
 	padding: 50px;
-
 	margin-top: 70px;
 	margin-bottom: 70px;
 }
@@ -241,7 +224,7 @@ body {
 	font-size: 16px;
 }
 
-/* CONTACTO - FORMULARIO ----------------- */
+/* CONTACTO - FORMULARIO --------------- */
 
 .form {
 	display: flex;
@@ -298,7 +281,7 @@ body {
 	margin-bottom: 20px;
 }
 
-/* FOOTER --------------------------- */
+/* FOOTER ----------------------------- */
 
 footer {
 	color: black;
@@ -331,7 +314,7 @@ footer p {
 }
 
 
-/* XTRAS -------------------- */
+/* XTRAS ------------------------------ */
 
 
 h1 {

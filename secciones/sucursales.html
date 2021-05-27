@@ -57,49 +57,66 @@
 
 		<h1><strong>Sucursales</strong></h1>	
 
-		<section class="sucursales__grilla">
-			<div id="grilla">
-				<header>
-					<p>Casa Central</p>
-				</header>
-				<nav>
-					<p>FADU</p>
-				</nav>
-				<section>
-					<p>Belgrano</p>
-				</section>
-				<section>
-					<ul>
-						<li>Ploteos fotográficos</li>
-						<li>Ploteos de planos</li>
-						<li>Impresiones</li>
-						<li>Fotocopias</li>
-						<li>Digitalización</li>
-						<li>Terminaciones</li>
-						<li>Artículos de librería</li>
-					</ul>
-				</section>
-				<aside>
-					<ul>
-						<li>Ploteos fotográficos</li>
-						<li>Ploteos de planos</li>
-						<li>Impresiones</li>
-						<li>Fotocopias</li>
-					</ul>
-				</aside>
-				<section>
-					<ul>
-						<li>Artículos de librería</li>
+		<div class="container__accordion">
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						Casa central
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p>Gráfica y Librería</p>
+						<ul>
+							<li>Ploteos fotográficos</li>
+							<li>Ploteos de planos</li>
+							<li>Impresiones</li>
+							<li>Fotocopias</li>
+							<li>Digitalización</li>
+							<li>Terminaciones</li>
+							<li>Artículos de librería</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						Belgrano
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p>Librería</p>
 							<ul>
 								<li>Técnica</li>
 								<li>Oficina</li>
 								<li>Artística</li>
 								<li>Escolar</li>
 							</ul>
-					</ul>
-				</section>
+					</div>
+				</div>
 			</div>
-		</section>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+						FADU
+					</button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p>Gráfica y Librería</p>
+							<ul>
+								<li>Ploteos fotográficos</li>
+								<li>Ploteos de planos</li>
+								<li>Impresiones</li>
+								<li>Fotocopias</li>
+							</ul>
+					</div>
+			   </div>
+			</div>
+		</div>
 	
 		<div class="mapas">
 			<h2 class="mapas__titulos">Casa central - Tacuari 342 - C.A.B.A. - Tel: 4345-8004 (Rot.) - tacuari@libreriadesalvo.com.ar</h2>
@@ -121,8 +138,9 @@
 				<p>Diseñado y desarrollado por Kevin Schatz</p>
 
 				<div class="header__iconos">
-					<a class="logoFb" title="desalvo" href="https://www.facebook.com/libreriadesalvo"><img src="../imagenes/fb.png" alt="logoFb" width="15"/></a>	
-					<a class="logoMail" title="desalvo" href="mailto:tacuari@libreriadesalvo.com.ar"><img src="../imagenes/mail.png" alt="logoMail" width="15"/></a>	
+					<a class="logoFb" title="Facebook" href="https://www.facebook.com/libreriadesalvo" target=":_blank"><img src="../imagenes/fb.png" alt="logoFb" width="15px"/></a>	
+
+					<a class="logoMail" title="Mail" href="mailto:tacuari@libreriadesalvo.com.ar" target=":_blank"><img src="../imagenes/mail.png" alt="logoMail" width="15px"/></a>	
 				</div>	
 			</footer>
 
