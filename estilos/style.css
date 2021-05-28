@@ -157,17 +157,51 @@ body {
 
 /* SUCURSALES -------------------------- */
 
+.fondo4__container {
+	position: relative;
+  }
+  
+.fondo4__overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	
+ }
+
+
+.fondo4__container:hover .fondo4__overlay {
+	opacity: 0;
+
+}
+
+.fondo4__container:hover {
+	transition: 0.2s;	
+	filter: invert(100%);
+
+}
+
 .accordion-item {
 	width: 60%;
 	margin-right: 20%;
 	margin-left: 20%;
 }
 
+.accordion-body {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: start;
+	align-items: baseline;
+}
 
 .mapas {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
@@ -207,6 +241,30 @@ body {
 }
 
 
+.video {
+	display: flex;
+	justify-content: center;
+}
+
+video {
+	filter:
+		contrast(200%)
+		grayscale(200%);
+	width: 425px;
+	height: 293px;
+
+}
+
+#videos{
+	max-width: 600px; 
+	 overflow: hidden;
+   }
+   
+video::-webkit-media-controls {
+	display:none !important;
+}
+
+
 .nosotros {
 	background-color: white;
 	justify-content: center;
@@ -218,6 +276,7 @@ body {
 .nosotros__subtitulo {
 	font-size: 20px;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .nosotros__parrafo {
@@ -225,6 +284,34 @@ body {
 }
 
 /* CONTACTO - FORMULARIO --------------- */
+
+.fondo2__container {
+	position: relative;
+  }
+  
+.fondo2__overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	
+ }
+
+
+.fondo2__container:hover .fondo2__overlay {
+	opacity: 0;
+
+}
+
+.fondo2__container:hover {
+	transition: 0.2s;	
+	filter: grayscale(100%);
+
+}
+
+
 
 .form {
 	display: flex;
