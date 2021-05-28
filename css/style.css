@@ -65,6 +65,30 @@ body {
 
 /* INDEX - IMAGENES ------------------- */
 
+.fondo__container {
+	position: relative;
+  }
+  
+.fondo__overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	
+ }
+
+.fondo__container:hover .fondo__overlay {
+	opacity: 0;
+
+}
+
+.fondo__container:hover {
+	transition: 0.3s;	
+	filter: invert(100%);
+
+}
 
 .indexTitulo {
 	font-size: 30px;
@@ -240,7 +264,10 @@ body {
 	height: auto;
 }
 
-
+#videos{
+	 overflow: hidden;
+   }
+   
 .video {
 	display: flex;
 	justify-content: center;
@@ -250,16 +277,12 @@ video {
 	filter:
 		contrast(200%)
 		grayscale(200%);
-	width: 425px;
-	height: 293px;
+	width: 293px;
+	height: 425px;
 
 }
 
-#videos{
-	max-width: 600px; 
-	 overflow: hidden;
-   }
-   
+
 video::-webkit-media-controls {
 	display:none !important;
 }
@@ -298,7 +321,6 @@ video::-webkit-media-controls {
 	width: 100%;
 	
  }
-
 
 .fondo2__container:hover .fondo2__overlay {
 	opacity: 0;
