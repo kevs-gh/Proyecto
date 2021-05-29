@@ -21,30 +21,26 @@ body {
 .navbar-brand{
 	padding: 0px;
 	margin: 0px;
-	transition-property: all;
-	transition-duration: 300ms;
-	
+
 }
 
 .navbar-collapse {
-    flex-basis: 100%;
     flex-grow: 0;
-    align-items: center;
 }
 
 
 /*
-#logo1 {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-}
+background-image: url("../imagenes/logo2.png");
+	width: 220px;
+	height: auto;
+	background-repeat: no-repeat;
+*/
 
-#logo1:hover{
-    display: none;
-}
 
+/*
 #logo2{
+	background-image: url("../imagenes/logo2.png");
+	width: 200px;
     position: absolute;
     left: 15px;
     top: 15px;
@@ -54,13 +50,14 @@ body {
 
 #logo2:hover{
     filter: opacity(1);
+
 }
 
 #navbarText {
     justify-content: flex-end!important;
 }
-*/
 
+*/
 
 
 /* INDEX - IMAGENES ------------------- */
@@ -259,52 +256,44 @@ body {
 }
 
 #sliding-container figure:last-of-type img:nth-child(1) {
-
 	width: 220%;
 	height: auto;
 }
 
-#videos{
-	 overflow: hidden;
-   }
-   
-.video {
+.nosotros {	
 	display: flex;
-	justify-content: center;
 }
+
 
 video {
 	filter:
 		contrast(200%)
 		grayscale(200%);
+	overflow: hidden;
 	width: 293px;
-	height: 425px;
+	box-shadow: 5px 5spx 75px rgb(100, 100, 100);
+
+	margin-bottom: 0px;
+
 
 }
 
-
-video::-webkit-media-controls {
-	display:none !important;
-}
-
-
-.nosotros {
-	background-color: white;
-	justify-content: center;
-	padding: 50px;
-	margin-top: 70px;
-	margin-bottom: 70px;
+.nosotros__texto {
+	width: 75%;
+  text-align: justify;
 }
 
 .nosotros__subtitulo {
-	font-size: 20px;
-	text-align: center;
+	font-size: 29px;
 	margin-bottom: 30px;
 }
 
 .nosotros__parrafo {
+	margin-top: 30px;
 	font-size: 16px;
+
 }
+
 
 /* CONTACTO - FORMULARIO --------------- */
 
@@ -322,6 +311,7 @@ video::-webkit-media-controls {
 	
  }
 
+
 .fondo2__container:hover .fondo2__overlay {
 	opacity: 0;
 
@@ -333,62 +323,39 @@ video::-webkit-media-controls {
 
 }
 
-
-
 .form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-content: center;
-	padding: 30px;
-	margin-top: 50px;
 	margin-bottom: 50px;
+
 }
 
-.col-sm-3 {
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	margin-left: 0px;
+.form__email {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .form-select {
-	justify-content: center;
 	width: auto;
+	padding: 0px;
 }
-
 
 .form__legend {
-	font-size: 17px;
-	margin: 30px;
-	margin-left: 0px;
-	margin-bottom: 30px;
-}
-
-.form__span {
-	display: flex;
-	flex-direction: column;
-	width: auto;
-}
-
-.col-sm-10 {
-	justify-content: center;
+	font-size: 18px;
+	margin-top: 30px;
 }
 
 .form-check {
-	margin: 20px;
+	margin: 40px;
 }
 
-.form__textArea {
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-}
-
-.form-check {
+.form-floating {
 	margin-bottom: 20px;
 }
+
 
 /* FOOTER ----------------------------- */
 

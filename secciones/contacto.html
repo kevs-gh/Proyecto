@@ -62,50 +62,41 @@
 		<h1><strong>Contacto</strong></h1>
 
 		<form class="form">
-			<div class="row mb-3">
-				<label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
-				<div class="col-sm-10">
-					<input type="email" class="form-control" id="inputEmail3">
-				</div>
+			<div class="form__nombre">
+				<input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
 			</div>
 
-			<div class="row mb-3">
-				<label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
-				<div class="col-sm-10">
-					<input type="password" class="form-control" id="inputPassword3">
-				</div>
+			<div class="form__email">
+				<input type="password" class="form-control" placeholder="Email" aria-label="Email">
 			</div>
 
-			<div class="col-sm-3">
-				<label class="visually-hidden" for="specificSizeSelect">Preference</label>
-				<select class="form-select" id="specificSizeSelect">
-				  <option selected>Motivo</option>
-				  <option value="1">Presupuesto</option>
-				  <option value="2">Consulta</option>
-				  <option value="3">Reclamo</option>
-				</select>
-			</div>
+			<select class="form-select" aria-label="Default select example">
+				<option selected>⠀Motivo</option>
+				<option value="1">Presupuesto</option>
+				<option value="2">Consulta</option>
+				<option value="3">Reclamo</option>
+			</select>
 
 			<fieldset class="row mb-3">
-			  <legend class="form__legend">¿Es con urgencia?</legend>
-				<div class="col-sm-10">
-					<div class="form-check">
-						<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-						<label class="form-check-label" for="gridRadios1">Si</label>
+				<legend class="form__legend">¿Es con urgencia?</legend>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+							<label class="form-check-label" for="gridRadios1">Si</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							<label class="form-check-label" for="gridRadios2">No</label>
+						</div>
 					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-						<label class="form-check-label" for="gridRadios2">No</label>
-					</div>
-				</div>
 			</fieldset>
 			 
-			<div class="form__textArea">
-				<span class="form__span">Mensaje</span>
-					<textarea name="consulta" placeholder="Comentarios"></textarea>
+			<div class="form-floating">
+				<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+				<label for="floatingTextarea2">Commentarios</label>
 			</div>
 
-			<button type="submit" class="btn btn-primary">Envíar</button>
+			<button width="350px" type="submit" class="btn btn-primary">Envíar</button>
 		</form>
 
 		<footer>
