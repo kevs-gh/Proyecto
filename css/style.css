@@ -62,8 +62,13 @@ background-image: url("../imagenes/logo2.png");
 
 /* INDEX - IMAGENES ------------------- */
 
+.fondo__imagen {
+	width: 100%;
+}
+
 .fondo__container {
 	position: relative;
+
   }
   
 .fondo__overlay {
@@ -121,13 +126,15 @@ background-image: url("../imagenes/logo2.png");
 
 .imagenes__container:hover {
 	transition: 0.3s;
+	filter: grayscale(100%);
+
 }
   
 .imagenes__text {
 	color:white;
 	font-size: 25px;	
 	font-weight: bold;
-	letter-spacing: 11px;
+	letter-spacing: 15px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -251,11 +258,11 @@ background-image: url("../imagenes/logo2.png");
 	transition: 15s ease-in-out;
 }
 
-#sliding-container figure:first-of-type:hover img {
+#sliding-container figure:hover img {
 	transform: translateX(-50%);
 }
 
-#sliding-container figure:last-of-type img:nth-child(1) {
+#sliding-container figure img {
 	width: 220%;
 	height: auto;
 }
@@ -264,17 +271,13 @@ background-image: url("../imagenes/logo2.png");
 	display: flex;
 }
 
-
 video {
 	filter:
 		contrast(200%)
 		grayscale(200%);
 	overflow: hidden;
 	width: 293px;
-	box-shadow: 5px 5spx 75px rgb(100, 100, 100);
-
-	margin-bottom: 0px;
-
+	box-shadow: 1px 1px 30px  rgb(100, 100, 100);
 
 }
 
@@ -296,6 +299,10 @@ video {
 
 
 /* CONTACTO - FORMULARIO --------------- */
+
+.fondo2__imagen {
+	width: 100%;
+}
 
 .fondo2__container {
 	position: relative;
@@ -363,30 +370,31 @@ footer {
 	color: black;
 	font-size: 5px;
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
-	background-color: white;
-	padding: 20px;
+	
 }
 
 footer p {
-	margin: 10px;
+	margin: 20px;
 	font-size: 13px;
-	display: flex;
 	align-items: center;
+	
 }
 
-.header__iconos {
-	display: flex;
-	align-items: center;
-	margin-right: 35px;
+.footer__iconos {
+	margin: 20px;
+
 }
 
 .logoFb {
 	margin: 20px;
+
 }
+
 .logoMail {
-	margin: 10px;
+	margin: 20px;
+
 }
 
 
