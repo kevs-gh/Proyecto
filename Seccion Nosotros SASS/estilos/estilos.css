@@ -1,0 +1,85 @@
+.row>* {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px; }
+
+/* -------------------------- */
+
+#sliding-container {
+  display: flex;
+  overflow: hidden; }
+
+#sliding-container figure {
+  position: relative;
+  flex: 1;
+  margin: 0;
+  overflow: hidden; }
+
+#sliding-container img {
+  transition: 15s ease-in-out; }
+
+#sliding-container figure:hover img {
+  transform: translateX(-50%); }
+
+#sliding-container figure img {
+  width: 220%;
+  height: auto; }
+
+.nosotros {
+    display: flex;
+    background-color: white; }
+
+
+video {
+  filter:
+    contrast(200%)
+    grayscale(200%);
+  overflow: hidden;
+  width: 293px; }
+
+.nosotros__texto {
+  width: 75%;
+  text-align: justify; }
+
+h1 {
+    color: black;
+    font-size: 30px;
+    color: rgb(70, 70, 70);
+    margin-top: 150px;
+    margin-bottom: 150px;
+    letter-spacing: 22px;
+    text-align: center; }
+
+.nosotros__subtitulo {
+  color: grey;
+  font-size: 29px;
+  margin-bottom: 30px;; }
+
+.nosotros__parrafo {
+  margin-top: 30px;
+  font-size: 16px;
+  color: dark-grey; }
+
+footer {
+  color: black;
+  font-size: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+footer p {
+  margin: 20px;
+  font-size: 13px;
+  align-items: center; }
+
+.footer__iconos {
+  margin: 20px; }
+
+.logoFb {
+  margin: 20px; }
+
+.logoMail {
+  margin: 20px; }
