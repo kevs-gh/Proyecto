@@ -28,6 +28,8 @@ body {
 	width: 200px;
 	background-repeat: no-repeat;
 	margin-top: 15px;
+	transition: 0.7s;
+
 
 }
 
@@ -52,6 +54,10 @@ body {
 	width: 100%;
 }
 
+.fondo__container {
+	transition: 0.7s;	
+}
+
 .fondo__container:hover {
 	filter: invert(100%);	
 	transition: 0.5s;	
@@ -59,6 +65,7 @@ body {
 
 .indexTitulo {
 	font-size: 30px;
+	font-weight: bold;
 	color: rgb(70, 70, 70);
 	margin-top: 150px;
 	margin-bottom: 150px;
@@ -79,12 +86,13 @@ body {
 	right: 0;
 	width: 100%;
 	opacity: 0;
-	transition: .5s ease;
+	transition: 0.7s;
 	background-color: #1a1a1a;
 }
 
 .imagenes__container:hover .imagenes__overlay {
 	opacity: 0.7;
+	transition: 0.7s;
 }
 
 .imagenes__container:hover {
@@ -140,6 +148,7 @@ body {
 	width: 440px;
 	height: 440px;
 	filter: grayscale(100%);
+	transition: 0.7s;
 }
 
 .container__imagenes:hover {
@@ -165,21 +174,9 @@ body {
 
 .fondo4__container {
 	position: relative;
+	transition: 0.7s;
 }
   
-.fondo4__overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-}
-
-.fondo4__container:hover .fondo4__overlay {
-	opacity: 0;
-}
-
 .fondo4__container:hover {
 	transition: 0.5s;	
 	filter: invert(100%);
@@ -249,6 +246,7 @@ body {
 
 .video {
 	opacity: 50%;
+	transition: 0.7s;
 }
 
 .video:hover {    
@@ -292,19 +290,7 @@ video {
 
 .fondo2__container {
 	position: relative;
-}
-  
-.fondo2__overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-}
-
-.fondo2__container:hover .fondo2__overlay {
-	opacity: 0;
+	transition: 0.7s;
 }
 
 .fondo2__container:hover {
@@ -381,6 +367,7 @@ footer p {
 
 h1 {
 	font-size: 30px;
+	font-weight: bold;
 	color: rgb(70, 70, 70);
 	margin-top: 150px;
 	margin-bottom: 150px;
